@@ -1,11 +1,23 @@
 puts "Choisis un numbre entre 1 et 25 :"
-n = Integer gets.chomp.to_i
-i = 0
-m=25
 
-while n < m
-  i = i+1
-  puts  "#{" "*n + "#"*i}"
-n=n-1
+# Champ à remplir par l'utilisateur
+n = Integer gets.chomp
+# Valeur de départ pour le premier étage
+i = 0
+# Valeur maximale
+m= 25
+# Espace
+f=" "
+# Pour les briques
+d="#"
+
+while n <= 25
+
 i = i+1
+
+  puts "#{f* n + d * i}"
+
+i = i+1
+n=n-1
+
 end
