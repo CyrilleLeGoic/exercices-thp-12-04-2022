@@ -1,6 +1,10 @@
 puts "Choisis un numbre entre 1 et 25 :"
-number = Integer gets.chomp
+n = Integer gets.chomp
+i = 1
 
-number.times do |i|
-puts "#"*(i + 1)
+
+while i <= n
+  i = i+1
+  puts "#" * i
+
 end
